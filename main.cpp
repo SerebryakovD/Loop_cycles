@@ -11,19 +11,19 @@ int main() {
 	// раскоментировать строку ниже, чтобы нарисовать ромб.
 	//issue2();
 
-	int n, m;
-	char s;
+	int side_a, side_b;
+	char symbol;
 	cout << "¬ведите сторону а: ";
-	cin >> n;
+	cin >> side_a;
 	cout << "¬ведите сторону b: ";
-	cin >> m;
+	cin >> side_b;
 	cout << "¬ведите символ: ";
-	cin >> s;
+	cin >> symbol;
 
-	for (int i = 0; i < n; i++) {
-		for (int j = 0; j < m; j++) {
-			if (i == 0 || j == 0 || i == (n-1) || j == (m - 1)) {
-				cout << " " << s << " ";
+	for (int i = 0; i < side_a; i++) {
+		for (int j = 0; j < side_b; j++) {
+			if (i == 0 || j == 0 || i == (side_a -1) || j == (side_b - 1)) {
+				cout << " " << symbol << " ";
 			}
 			else {
 				cout << "   ";
