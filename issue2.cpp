@@ -1,7 +1,8 @@
 #include<iostream>
 using namespace std;
 
-void isse2() {
+// Задание 2. Вывести на экран ромб из звездочек.
+void issue2() {
 	for (int i = 0; i < 10; i++) {
 		for (int j = 10; j > 0; j--) {
 			if (i > j) {
